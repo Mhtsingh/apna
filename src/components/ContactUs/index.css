@@ -1,0 +1,243 @@
+.form-container {
+  margin: 0 auto;
+  width: 100%;
+  /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2); */
+  position: relative;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 768px) {
+  .form-container {
+    grid-template-columns: 1fr;
+    height: 700px;
+  }
+}
+
+.form-content-left {
+  background: #101522;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .form-content-left {
+    display: none;
+  }
+}
+
+
+.form-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-img-2 {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-success {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 80px;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .form-success {
+    margin-top: 47px;
+  }
+}
+
+.form-content-right {
+  margin-top: 0;
+  /* border-radius: 0 10px 10px 0; */
+  position: relative;
+  /* background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%); */
+  background: #101522;
+}
+
+.form {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+@media only screen and (max-width: 768px) {
+  .form {
+    align-items: center; 
+  }
+}
+
+.form h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: start;
+  width: 80%;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.form h2 {
+  font-size: 1rem;
+  text-align: start;
+  width: 80%;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .form h1 {
+  width: 100%;
+    text-align: center;
+  }
+  .form h2 {
+  width: 100%;
+    text-align: center;
+  }
+  
+}
+
+.form-inputs {
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+
+@media only screen and (max-width: 786){
+    .form_wrap{
+      width: 100%
+    }
+}
+
+.form-inputs p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
+.form-label {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.form-input {
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.form-input::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+
+.form-input-btn {
+  width: 20%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 224, 44, 0.822) 0%,
+    rgb(56, 230, 79) 100%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-input-btn:hover {
+  cursor: pointer;
+  background:  linear-gradient(
+    180deg,
+    rgba(59, 224, 44, 0.822) 0%,
+    rgb(56, 230, 79) 100%
+  );
+  transition: all 0.4s ease-out;
+}
+
+.form-input-login {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+
+.form-input-login a {
+  text-decoration: none;
+  color: #27cdff;
+  font-weight: 600;
+}
+
+.form_lable ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .content_wrap{
+    width: 100;
+  }
+.form_wrap{
+  margin-right: -62px;
+  padding-top: 0rem !important;
+  width: 100%;
+  }
+  .form-input-btn {
+    width: 80%;
+  }
+  .form_lable ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .form_lable ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .form_lable ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .content_wrap{
+  padding-top: 6rem;
+  }
+}
+
+.form_lable ul li{  
+  padding-right:22px;
+  font-size: 1rem;
+}
+
+.form_wrap{
+  padding-top: 2rem;
+}
+
+.content_wrap{
+  padding-top: 4rem;
+
+}

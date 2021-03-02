@@ -1,0 +1,121 @@
+.form-wrap{
+    margin-top: 80px;
+}
+.form_container{
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+  }
+  .form_cont{
+    padding-bottom: 10px;
+    margin-top: 30px;
+  }
+  .tab_cont{
+    padding-bottom: 10px;
+    padding-top: 150px;
+    position: relative;
+  }
+  .heading{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .form_label{
+    color: rgb(36, 31, 31);
+    font-size: 15px;
+  }
+  
+  .tab_col{
+   border-bottom: none !important;
+    color: #fff;
+    justify-content: center; 
+  }
+  
+
+  
+  .tab_col a{
+    padding: 15px 50px;
+    border-radius: 0 !important;
+    border: 2px solid #00BFA6 !important;
+    background-color: #fff;
+  }
+  
+  .tab_col a.active{
+    background-color:#00BFA6 !important;
+    color: #fff !important;
+  }
+  .tab_col a:hover{
+    background-color: #00BFA6;
+    color: #fff;
+  }
+  
+
+.title{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #1C2237;
+}
+.signature{
+  width: 412px;
+  height: 206px;
+  border: 2px solid #ededed ;
+}
+
+.button_back{
+  margin-left: 15rem !important;
+}
+
+.button_back1{
+  margin-left: 55rem !important;
+}
+
+.sign_box{
+  margin-left: 15rem ;
+}
+
+.term_chkbox{
+  margin-top: 20px;
+}
+
+.button_space{
+  padding: 8px 25px;
+}
+.canva{
+  width: 412px !important ;
+  height:206px !important ;
+}
+
+/* Media quiery */
+
+@media only screen and (max-width: 1000px){
+  .tab_col{
+    display: block !important;
+    text-align: center;
+  }
+  .sign_box{
+    margin-left: 0 !important;
+  }
+  .canva{
+    width: 482px !important ;
+    height:206px !important ;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .tab_col a{
+    display: 15px 50px;
+  }
+  .sign_box{
+    margin-left: 0;
+  }
+  .canva{
+    width: 482px !important ;
+    height:206px !important ;
+  }
+  .button_back{
+    margin-left: 5rem !important;
+  }
+  .button_back1{
+    margin-left: 8rem !important;
+  }
+} 

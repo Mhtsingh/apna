@@ -1,0 +1,30 @@
+
+.call-action-color {
+    background-color:#fff;
+    margin: 10px 0 50px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 900;
+    color: #101522;
+    height: 10px;
+}
+
+@media only screen and (max-width: 786px){
+    .call-action-color{
+        font-size: 8px;
+        height: 100px;
+    }
+    
+}
+/* 
+.call-action-color .main_heading h1
+{   padding-bottom: 10px;
+	color: #101522;
+} */
+
+.call-action-color .underline
+{
+	background-color: #101522;
+}

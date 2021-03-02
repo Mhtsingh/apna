@@ -1,0 +1,67 @@
+
+.icon-bar {
+    right: 0%;
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .icon-bar {
+        display: none;
+    }
+  }
+    .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 4px;
+    transition: all 0.3s ease;
+    color:white;
+    font-size: 30px;
+    border-radius: 20% 0 0 20%;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .facebook:hover {
+    background: #3B5998;
+    color: #3B5998;
+  }
+  
+  
+.twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .twitter:hover {
+    background: #55ACEE;
+    color: #55ACEE;
+  }
+  .instagram {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .instagram:hover {
+    background: #dd4b39;
+    color: #dd4b39;
+  }
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .linkedin:hover {
+    background: #007bb5;
+    color: #007bb5;
+  }
+
+  .icon-bar a:hover {
+    background-color: #36454F;
+  }
