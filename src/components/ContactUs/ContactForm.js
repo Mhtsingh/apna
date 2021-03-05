@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import emailjs from 'emailjs-com'
+// import emailjs from 'emailjs-com'
 
 
 const useForm = (callback, validate) => {
@@ -22,12 +22,12 @@ const useForm = (callback, validate) => {
   const handleSubmit = e => {
     e.preventDefault();
     setErrors(validate(values));
-    emailjs.sendForm('service_p5nkb96', 'template_xjq25zd', e.target, 'user_Lc8gB60AoGlq0FPocvEMl')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
+    // emailjs.sendForm('service_p5nkb96', 'template_xjq25zd', e.target, 'user_Lc8gB60AoGlq0FPocvEMl')
+    // .then((result) => {
+    //     console.log(result.text);
+    // }, (error) => {
+    //     console.log(error.text);
+    // });
     setIsSubmitting(true);
   };
 

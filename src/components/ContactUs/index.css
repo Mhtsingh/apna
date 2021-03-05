@@ -153,11 +153,7 @@
   height: 50px;
   margin-top: 10px;
   border-radius: 10px;
-  background: linear-gradient(
-    90deg,
-    rgba(59, 224, 44, 0.822) 0%,
-    rgb(56, 230, 79) 100%
-  );
+  background: #0E7B24;
   outline: none;
   border: none;
   color: #fff;

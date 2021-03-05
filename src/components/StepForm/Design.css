@@ -24,14 +24,19 @@
     font-size: 15px;
   }
   
+  .form_label2{
+    color: rgb(36, 31, 31);
+    font-size: 16px;
+    margin-top: 65px;
+    
+  }
+
   .tab_col{
    border-bottom: none !important;
     color: #fff;
     justify-content: center; 
   }
-  
-
-  
+   
   .tab_col a{
     padding: 15px 50px;
     border-radius: 0 !important;
@@ -47,7 +52,6 @@
     background-color: #00BFA6;
     color: #fff;
   }
-  
 
 .title{
     text-transform: uppercase;
@@ -56,13 +60,13 @@
     color: #1C2237;
 }
 .signature{
-  width: 412px;
+  width: 524px;
   height: 206px;
   border: 2px solid #ededed ;
 }
 
 .button_back{
-  margin-left: 15rem !important;
+  margin-left: 27rem !important;
 }
 
 .button_back1{
@@ -70,23 +74,52 @@
 }
 
 .sign_box{
-  margin-left: 15rem ;
+  margin-left: 7rem ;
+}
+.sig_btn{
+  display: inline-block;
+  font-weight: 400;
+  margin-right: 4px;
 }
 
+/* .upload-btn-wrapper input[type=file]{
+  background-color: whitesmoke;
+  border-radius: 5px;
+} */
 .term_chkbox{
   margin-top: 20px;
 }
 
 .button_space{
-  padding: 8px 25px;
+  margin-right: 20px;
+  padding: 6px 29px;
+}
+.button_space_bck{
+  margin-right: 15px;
+  padding: 6px 29px;
 }
 .canva{
-  width: 412px !important ;
+  width: 600px !important ;
   height:206px !important ;
 }
 
+.sub_button{
+  background-color:#0E7B24 !important;
+  color: white !important;
+}
+
+.sub_button:hover{
+  color: white;
+}
+
+
 /* Media quiery */
 
+@media only screen and (max-width: 1200px){
+  .button_back1{
+    margin-left: 25rem !important;
+  }
+}
 @media only screen and (max-width: 1000px){
   .tab_col{
     display: block !important;
@@ -98,6 +131,9 @@
   .canva{
     width: 482px !important ;
     height:206px !important ;
+  }
+  .button_back1{
+    margin-left: 8rem !important;
   }
 }
 

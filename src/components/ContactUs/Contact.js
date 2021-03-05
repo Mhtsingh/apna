@@ -12,7 +12,6 @@ const Form = () => {
   return (
     <>
       <div className="form-container" id="contact">
-        {/* <span className='close-btn' }>×</span> */}
         <div className="form-content-left">
           <img className='form-img' src='img/contact.jpg' alt='contact' />
         </div>

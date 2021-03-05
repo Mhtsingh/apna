@@ -29,12 +29,8 @@ const Process = () => {
   };
   return (
     <ProcessContainer id="process">
-      <ProcessH1>Benifit with Apna Sapana - Without all the hassale</ProcessH1>
-      {/* <ProcessDots1/>
-      <ProcessDots2/>
-      <ProcessDots3/> */}
-
-      <ProcessWrapper className="slider">
+      <ProcessH1>APNA SAPANA Offerings</ProcessH1>
+         <ProcessWrapper className="slider">
       {/* <Slider {...settings}> */}
         <ProcessCard>
           <ProcessIcon src={Icon1} />

@@ -36,7 +36,6 @@ const Header = ({ toggle }) => {
 
   return (
     <>
-      {/* <Nav scrollNav={scrollNav}> */}
       <Nav>
         <NavbarContainer >
           <NavLogo to="/" onClick={toggleHome} >< img src={require('../../images/headLogo.png').default}/></NavLogo>

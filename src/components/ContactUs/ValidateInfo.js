@@ -14,11 +14,6 @@ export default function validateInfo(values) {
     } else if (values.contactnumber.length < 10) {
       errors.contactnumber = 'Nontact Number needs to be 10 digit or more';
     }
-  
-    // if (!values.password2) {
-    //   errors.password2 = 'Password is required';
-    // } else if (values.password2 !== values.password) {
-    //   errors.password2 = 'Passwords do not match';
-    // }
+
     return errors;
   }
