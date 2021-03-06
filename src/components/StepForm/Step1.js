@@ -11,8 +11,11 @@ const Step1 = ({ formData, setForm, navigation }) => {
       event.preventDefault();
       event.stopPropagation();
     }
-
+    else{
+          navigation.next();
+    }
     setValidated(true);
+
   };
 
   const { client_name, client_email, client_phone, client_state } = formData;
@@ -30,6 +33,7 @@ const Step1 = ({ formData, setForm, navigation }) => {
               value={client_name}
               onChange={setForm}
               placeholder="Your Name"
+              required
             />
             <Form.Control.Feedback type="invalid">
               Please provide your name.
@@ -44,6 +48,7 @@ const Step1 = ({ formData, setForm, navigation }) => {
               value={client_email}
               onChange={setForm}
               placeholder="Email"
+              required
             />
             <Form.Control.Feedback type="invalid">
               Please provide email.
@@ -58,6 +63,7 @@ const Step1 = ({ formData, setForm, navigation }) => {
               value={client_phone}
               onChange={setForm}
               placeholder="Number"
+              required
             />
             <Form.Control.Feedback type="invalid">
               Please provide your contact number.
@@ -74,8 +80,9 @@ const Step1 = ({ formData, setForm, navigation }) => {
               onChange={setForm}
               placeholder="State"
               as="select"
+              // required
             >
-              <option>Choose...</option>
+              <option value="" disabled >Choose...</option>
               <option value="Andhra Pradesh">Andhra Pradesh</option>
               <option value="Andaman and Nicobar Islands">
                 Andaman and Nicobar Islands
@@ -117,14 +124,15 @@ const Step1 = ({ formData, setForm, navigation }) => {
               <option value="Uttarakhand">Uttarakhand</option>
               <option value="West Bengal">West Bengal</option>
             </Form.Control>
-            <Form.Control.Feedback type="invalid">
+            {/* <Form.Control.Feedback type="invalid">
               Please provide information.
-            </Form.Control.Feedback>
+            </Form.Control.Feedback> */}
           </Form.Group>
           <div className=" row button_back1">
             <button
               className="btn btn-danger button_space_bck"
-              onClick={() => navigation.previous()}
+              // onClick={() => navigation.previous()}
+              to="/"
             >
               Back
             </button>
@@ -132,14 +140,22 @@ const Step1 = ({ formData, setForm, navigation }) => {
               <button
                 className="btn sub_button"
                 type="submit"
-                onClick={() => navigation.next()}
+                // onClick={() => navigation.next()}
               >
                 Continue
               </button>
             </div>
           </div>
         </Form>
-
+        {/* <div className=" row button_back1">
+            <button
+              className="btn btn-danger button_space_bck"
+              // onClick={() => navigation.previous()}
+              to="/"
+            >
+              Back
+            </button>
+            </div> */}
         <br />
       </div>
     </>

@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState } from "react";
 import { Form, Col } from "react-bootstrap";
 import SignaturePad from "react-signature-canvas";
 import pdf from "../../documents/APNA_SAPANA_Agreement.pdf";
@@ -60,29 +60,30 @@ const Step2 = ({ formData, setForm, navigation }) => {
                   name="idea_cat"
                   value={idea_cat}
                   onChange={setForm}
+                  required
                 >
-                  <option>Choose....</option>
-                  <option>Agriculture</option>
-                  <option>Architecture</option>
-                  <option>Automotive</option>
-                  <option>Clothing</option>
-                  <option>Computers</option>
-                  <option>Electronics</option>
-                  <option>Envionment</option>
-                  <option>Exercise</option>
-                  <option>Food & Drink</option>
-                  <option>Health</option>
-                  <option>Kids</option>
-                  <option>Medicine</option>
-                  <option>Houseware</option>
-                  <option>Mobile App</option>
-                  <option>Pets</option>
-                  <option>Science</option>
-                  <option>Sports</option>
-                  <option>Technology</option>
-                  <option>Travel</option>
+                  <option value="" disabled>Choose....</option>
+                  <option value="Agriculture">Agriculture</option>
+                  <option value="Architecture">Architecture</option>
+                  <option value="Automotive">Automotive</option>
+                  <option value="Clothing">Clothing</option>
+                  <option value="Computers">Computers</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Envionment">Envionment</option>
+                  <option value="Exercise">Exercise</option>
+                  <option value="Food & Drink">Food & Drink</option>
+                  <option value="Health">Health</option>
+                  <option value="Kids">Kids</option>
+                  <option value="Medicine">Medicine</option>
+                  <option value="Houseware">Houseware</option>
+                  <option value="Mobile App">Mobile App</option>
+                  <option value="Pets">Pets</option>
+                  <option value="Science">Science</option>
+                  <option value="Sports">Sports</option>
+                  <option value="Technology">Technology</option>
+                  <option value="Travel">Travel</option>
                   <option value="other">Other</option>
-                  {/* {<Form.Control type="text" name="idea_abst" />} */}
+                  { idea_cat ? <Form.Control type="text" name="idea_abst" /> : "" }
                 </Form.Control>
                 <Form.Control.Feedback type="invalid">
                   Please choose option.
