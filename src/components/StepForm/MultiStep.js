@@ -26,14 +26,14 @@ const steps = [
 ]
 
 const MultiStep = () => {
-
+    const {register } = useForm();
   const [formData, setForm] = useForm(defaultData);
   const { step, navigation } = useStep({
     steps,
     initialStep: 0,
   });
 
-  const props = { formData, setForm, navigation };
+  const props = { formData, setForm, navigation, register };
 
   switch(step.id){
       case "step1":

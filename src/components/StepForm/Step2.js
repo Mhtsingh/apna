@@ -4,7 +4,7 @@ import SignaturePad from "react-signature-canvas";
 import pdf from "../../documents/APNA_SAPANA_Agreement.pdf";
 import "./Design.css"
 
-const Step2 = ({ formData, setForm, navigation }) => {
+const Step2 = ({ formData, setForm, navigation,register}) => {
   const {
     idea_title,
     idea_cat,
@@ -23,7 +23,6 @@ const Step2 = ({ formData, setForm, navigation }) => {
       event.preventDefault();
       event.stopPropagation();
     }
-
     setValidated(true);
   };
 
@@ -114,6 +113,7 @@ const Step2 = ({ formData, setForm, navigation }) => {
             <Form.Group>
               <Form.File
                 className="form_label"
+                ref={register}
                 label="Drawing of Invention/Idea (if available)"
                 required
               />
