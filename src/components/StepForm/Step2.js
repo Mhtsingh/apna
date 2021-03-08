@@ -219,7 +219,7 @@ const Step2 = ({ formData, setForm, navigation,register}) => {
               <Form.Group>
                 <div className="upload-btn-wrapper">
                   <p className="sig_btn">Sigature</p>
-                  <input type="file" name="myfile" />
+                  <input ref={register} type="file" name="myfile" />
                 </div>
                 <Form.Label className="form_label2">
                   Please review
